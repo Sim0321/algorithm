@@ -5,4 +5,17 @@
 // 10 ≤ number ≤ 100
 // 2 ≤ n, m < 10
 
-function solution(number, n, m) {}
+function solution(number, n, m) {
+  if (number % n === 0 && number % m === 0) {
+    return 1;
+  } else if (number % n !== 0 || number % m !== 0) {
+    return 0;
+  }
+}
+
+// 처음엔 아래 코드로 했더니 몇개는 통과, 몇개는 불통과가 되었다. 예외처리에 신경써야할 것 같다
+if (number % n && number % m) {
+  return 1;
+} else {
+  return 0;
+}
