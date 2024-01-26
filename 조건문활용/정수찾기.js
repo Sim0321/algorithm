@@ -10,8 +10,5 @@ const solution = (list, n) => {
   return list.includes(n) ? 1 : 0;
 };
 
-console.log(solution([1, 2, 3, 4, 5], 3));
-console.log(solution([15, 98, 23, 2, 15], 20));
-
 // 해설
 // 굳이 map 이나 filter 쓸 필요없이 includes 메서드 사용해 return
