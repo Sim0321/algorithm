@@ -12,3 +12,15 @@ const solution = (numbers, n) => {
 
 // 해설
 // 누적값과 현재값으로 배열에서 쓰이는 reduce 메서드 사용해 누적값 비교
+
+// 다른 사람 풀이
+function solution(numbers, n) {
+  let sum = 0;
+
+  for (let i = 0; i < numbers.length; i++) {
+    sum += numbers[i];
+    if (sum > n) break;
+  }
+  return sum;
+}
+// break를 이용해 for문 탈출
