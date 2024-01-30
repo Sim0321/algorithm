@@ -12,6 +12,4 @@ const solution = (num_list) => {
   });
 };
 
-console.log(solution([3, 4, 5, 2, 5, 4, 6, 7, 3, 7, 2, 2, 1]));
-
 // 해설 및 다른 사람 풀이
