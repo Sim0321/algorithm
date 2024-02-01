@@ -2,7 +2,7 @@
 
 const solution = () => {
   console.log();
-  return;
+  // return
 };
 
 console.log(solution());
