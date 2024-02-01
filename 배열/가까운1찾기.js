@@ -4,16 +4,15 @@
 // 단, 만약 그러한 인덱스가 없다면 -1을 반환합니다.
 
 const solution = (arr, idx) => {
-  for (let i = 0; i < arr.length; i++) {
-    if (i > idx && arr[i] === 1) {
-      return i;
-    }
+  for (let i = idx; i < arr.length; i++) {
+    if (arr[i] === 1) return i;
   }
   return -1;
-  // return
 };
 
 console.log(solution([0, 0, 0, 1], 1));
 
 // 해설 및 다른 사람 풀이
 // 역시 무작정 map과 filter를 사용하지 않고 반복문으로도 풀 수 있다.
+// indexOf를 이용해서도 할 수 있다. indexOf(searchEl, fromIndex)
+// const solution=(a,i)=>a.indexOf(1,i);
