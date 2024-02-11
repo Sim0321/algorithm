@@ -29,3 +29,9 @@ console.log(
 );
 
 // 해설 및 다른 사람 풀이
+function solution(arr, queries) {
+  queries.forEach(([a, b]) => {
+    [arr[a], arr[b]] = [arr[b], arr[a]];
+  });
+  return arr;
+}
