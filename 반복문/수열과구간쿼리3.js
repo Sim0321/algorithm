@@ -6,14 +6,15 @@
 // 위 규칙에 따라 queries를 처리한 이후의 arr를 return 하는 solution 함수를 완성해 주세요.
 
 const solution = (arr, queryies) => {
-  for (let i = 0; i < queryies.length; i++) {
-    [arr[arr.indexOf(queryies[i][0])], arr[arr.indexOf(queryies[i][1])]] = [
-      arr[queryies[i][1]],
-      arr[queryies[i][0]],
-    ];
-    console.log(arr);
-  }
-  // console.log(arr);
+  queryies.map((el) => {
+    const [i, j] = el;
+    const first = arr[i];
+
+    arr[i] = arr[j];
+    arr[j] = first;
+  });
+
+  return arr;
 };
 
 console.log(
