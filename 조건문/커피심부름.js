@@ -4,8 +4,21 @@
 // 각 직원이 적은 메뉴가 문자열 배열 order로 주어질 때, 카페에서 결제하게 될 금액을 return 하는 solution 함수를 작성해주세요. order의 원소는 아래의 것들만 들어오고, 각각의 의미는 다음과 같습니다.
 
 const solution = (order) => {
-  console.log();
-  // returns
+  const latte = "cafelatte";
+  const americano = "americano";
+  let total = 0;
+
+  order.forEach((el) => {
+    if (el.includes(americano)) {
+      total += 4500;
+    } else if (el.includes(latte)) {
+      total += 5000;
+    } else {
+      total += 4500;
+    }
+  });
+
+  return total;
 };
 
 console.log(
