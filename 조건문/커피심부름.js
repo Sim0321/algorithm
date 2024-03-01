@@ -26,3 +26,5 @@ console.log(
 );
 
 // 해설 및 다른 사람 풀이
+// const solution = (order) =>
+//   order.reduce((acc, cur) => acc + (cur.includes("latte") ? 5000 : 4500), 0);
